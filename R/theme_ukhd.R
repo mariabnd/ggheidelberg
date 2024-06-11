@@ -7,6 +7,7 @@
 #' @author mariabnd
 #' @param base_size Desired base font size. Other font sizes are defined in
 #' relation to it. Defaults to 16
+#' @export
 theme_ukhd <- function(base_size = 16){
   #font <- "Helvetica"
   font <- "sans"
@@ -89,6 +90,7 @@ theme_ukhd <- function(base_size = 16){
 #' @examples
 #' scales::show_col(ukhd_pal())
 #' colorblindr::palette_plot(ukhd_pal())
+#' @export
 ukhd_pal <- function(n, name = "primary"){
   nm1 <- c("primary", "secondary", "grey", "orange", "beige", "green")
   nm2 <- c("blueorange1", "blueorange2", "greige")
@@ -238,6 +240,7 @@ pal_ukhd <- function(type = "seq", palette = "primary", direction = 1) {
 #' @param direction Direction of the palette. Defaults to 1
 #' 
 #' For a continous version use the colours from ukhd_pal in scale_x_gradientn
+#' @export
 scale_fill_ukhd <- function(name = waiver(), ..., type = "seq", palette = "primary",
                             direction = 1, na.value = "grey50"){
   ggplot2::discrete_scale(
